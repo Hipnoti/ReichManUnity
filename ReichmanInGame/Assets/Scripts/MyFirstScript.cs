@@ -2,9 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MyFirstScript : MonoBehaviour
 {
+    public SpriteRenderer _spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +19,6 @@ public class MyFirstScript : MonoBehaviour
     {
         transform.Translate(Vector2.right * Time.deltaTime * 1f);
                 transform.Rotate(Vector3.forward * Time.deltaTime * 20f);
+                _spriteRenderer.color = Random.ColorHSV();
     }
 }

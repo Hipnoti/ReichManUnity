@@ -14,6 +14,7 @@ public class MyFirstScript : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(Vector2.right * Time.deltaTime * 10f);
+        transform.Translate(Vector2.right * Time.deltaTime * 1f);
+                transform.Rotate(Vector3.forward * Time.deltaTime * 20f);
     }
 }

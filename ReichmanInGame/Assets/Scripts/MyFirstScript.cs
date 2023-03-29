@@ -8,6 +8,7 @@ public class MyFirstScript : MonoBehaviour
     void Start()
     {
         Debug.Log("Hello Reichman!");
+        Debug.Log("We are having fun!");
     }
 
   

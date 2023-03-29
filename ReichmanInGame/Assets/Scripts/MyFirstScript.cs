@@ -10,6 +10,7 @@ public class MyFirstScript : MonoBehaviour
     {
         Debug.Log("Hello Reichman!");
         Debug.Log("We are having fun!");
+        Debug.Log("Yet another debug");
     }
 
     private void Update()

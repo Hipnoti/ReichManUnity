@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,5 +12,8 @@ public class MyFirstScript : MonoBehaviour
         Debug.Log("We are having fun!");
     }
 
-  
+    private void Update()
+    {
+        transform.Translate(Vector2.right * Time.deltaTime * 10f);
+    }
 }
